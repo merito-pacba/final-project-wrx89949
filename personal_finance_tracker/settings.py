@@ -154,6 +154,6 @@ if AZURE_ACCOUNT_NAME and AZURE_ACCOUNT_KEY:
     INSTALLED_APPS += ["storages"]
 
     STATICFILES_STORAGE = "personal_finance_tracker.storage_backends.StaticAzureStorage"
-    STATIC_URL = ( f"https://{os.environ.get('AZURE_ACCOUNT_NAME')}.blob.core.windows.net/static/" )
+    STATIC_URL = ( f"https://{os.environ.get('AZURE_ACCOUNT_NAME')}.blob.core.windows.net/static/staticfiles/" )
 
 
